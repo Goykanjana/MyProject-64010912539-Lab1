@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>กาญจนา สุขจิต</title>
+</head>
+
+<body>
+<h1>ฟอร์มรับข้อมูล</h1>
+
+<form method="post" action="c.php">
+	คำนำหน้าชื่อ 
+     <input type="radio" name="prefix" value="นางสาว" checked>นางสาว 
+	 <input type="radio" name="prefix" value="นาง"checked>นาง
+     <input type="radio" name="prefix" value="นาย"checked>นาย
+     <br><br>
+     
+	ชื่อ สกุล <input type="text" name="fullname" required autofocus>
+    <br><br>
+    วันเดือนปีเกิด <input type="date"name="birthday" required>
+    <br><br>
+	ที่อยู่ <textarea name="address"rows="5" cols="50" required></textarea>
+    <br><br>
+	อีเมลล์ <input type="email" name="email">
+    <br><br>
+    ความสูง (ซม.) <input type="number" name="a" min="10" max="210" >
+    <br><br>
+    สีที่ชอบ <input type="color" name="b">
+    <br><br>
+    
+    สาขาวิชา 
+    <select name="c">
+		<option value="การบัญชี">การบัญชี</option>
+        <option value="การตลาด">การตลาด</option>
+        <option value="การจัดการ">การจัดการ</option>
+        <option value="คอมธุรกิจ">คอมธุรกิจ</option> 
+      <select  
+        <br><br><br>
+
+    <input type="submit" name="Submit" value="บันทึก">
+    <br>
+    
+</form>
+
+</body>
+</html>
